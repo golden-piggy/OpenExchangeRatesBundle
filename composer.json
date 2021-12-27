@@ -1,5 +1,5 @@
 {
-    "name": "mrzard/open-exchange-rates-bundle",
+    "name": "golden-piggy/open-exchange-rates-bundle",
     "type": "symfony-bundle",
     "description": "OpenExchangeRates API exposure for Symfony2",
     "keywords": [],
@@ -10,9 +10,16 @@
     "require": {
         "php": ">=5.6.0",
         "symfony/symfony": ">=2.3.18,<3.0 ",
-        "guzzlehttp/guzzle": "~6",
-        "mrzard/open-exchange-rates-service": "1.1.1"
+        "guzzlehttp/guzzle": "^7.0",
+        "golden-piggy/open-exchange-rates-service": "dev-master"
     },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git@github.com:golden-piggy/OpenExchangeRates.git",
+            "no-api": true
+        }
+    ],
     "require-dev": {
         "phpunit/phpunit": ">=4.0.0"
     },
